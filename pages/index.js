@@ -1,5 +1,5 @@
 function Home() {
-  return <h1>Se eu te mandei esse link, saiba que eu TE AMO! 😎</h1>;
+  return <h1>Disciplina é a chave para alcançar objetivos extraordinários... <br />Porque se não houver disciplina, o que mais pode te levar ao sucesso?! 😎</h1>;
 }
 
 export default Home;
