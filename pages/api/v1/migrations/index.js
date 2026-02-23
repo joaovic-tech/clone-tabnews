@@ -4,11 +4,10 @@ import database from "infra/database";
 
 export default async function migrations(req, res) {
   const dbClient = await database.getNewClient();
-
   const defaultMigrationOptions = {
     dbClient: dbClient,
     dryRun: true,
-    dir: join("infra", "migrations"),
+    dir: process.cwd() + "/infra/migrations",
     direction: "up",
     verbose: true,
     migrationsTable: "pgmigrations",
